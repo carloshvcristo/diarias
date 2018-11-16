@@ -1,0 +1,18 @@
+<table border=1 width=40%>
+	<thead>
+		<tr>
+			<th><h4>ID</h4></th>
+			<th><h4>NUMERO</h4></th>
+			<th><h4>NOME</h4></th>
+			<th><h4>DATA</h4></th>
+		</tr>
+	</thead>
+<% @diarias.each do |diaria| %>
+	<tr>
+		<td align="center"><h4><%= diaria.id %></h4></td>
+		<td align="center"><h4><%= diaria.nmr_solicitacao %></h4></td>
+		<td align="center"><h4><%= diaria.nome %></h4></td>
+		<td align="center"><h4><%= diaria.data %></h4></td>
+	</tr>
+<% end %>
+</table>
